@@ -2,7 +2,14 @@
 // Function triggered when client clicks [Verify]
 function verifyCaptcha() {
 
-    alert("Verified!");
+
+    if (window.location.href = "https://12buntu.github.io/fake-captcha/captcha-1") {
+        window.location.href = "http://12buntu.github.io/fake-captcha/AIP2.html";
+    }
+    else {
+        window.location.href = "http://12buntu.github.io/fake-captcha/AIP2.html";
+    }
+
     closeVerifyWindow();
 
 }
@@ -41,12 +48,12 @@ addCaptchaListeners();
 
 function runClickedCheckboxEffects() {
     hideCaptchaCheckbox();
-    setTimeout(function(){
+    setTimeout(function () {
         showCaptchaLoading();
-    },500)
-    setTimeout(function(){
+    }, 500)
+    setTimeout(function () {
         showVerifyWindow();
-    },900)
+    }, 900)
 }
 
 function showCaptchaCheckbox() {
@@ -81,20 +88,20 @@ function showVerifyWindow() {
     verifyWindow.style.visibility = "visible";
     verifyWindow.style.opacity = "1";
     verifyWindow.style.top = checkboxWindow.offsetTop - 80 + "px";
-    verifyWindow.style.left =  checkboxWindow.offsetLeft + 54 + "px";
+    verifyWindow.style.left = checkboxWindow.offsetLeft + 54 + "px";
 
-   if (verifyWindow.offsetTop < 5) {
-       verifyWindow.style.top = "5px";
-   }
+    if (verifyWindow.offsetTop < 5) {
+        verifyWindow.style.top = "5px";
+    }
 
-   if (verifyWindow.offsetLeft + verifyWindow.offsetWidth > window.innerWidth-10 ) {
-       verifyWindow.style.left =  checkboxWindow.offsetLeft - 8  + "px";
-   } else {
-       verifyWindowArrow.style.top = checkboxWindow.offsetTop + 24 + "px";
-       verifyWindowArrow.style.left = checkboxWindow.offsetLeft + 45 + "px";
-       verifyWindowArrow.style.visibility = "visible";
-       verifyWindowArrow.style.opacity = "1";
-   }
+    if (verifyWindow.offsetLeft + verifyWindow.offsetWidth > window.innerWidth - 10) {
+        verifyWindow.style.left = checkboxWindow.offsetLeft - 8 + "px";
+    } else {
+        verifyWindowArrow.style.top = checkboxWindow.offsetTop + 24 + "px";
+        verifyWindowArrow.style.left = checkboxWindow.offsetLeft + 45 + "px";
+        verifyWindowArrow.style.visibility = "visible";
+        verifyWindowArrow.style.opacity = "1";
+    }
 }
 
 function closeVerifyWindow() {
