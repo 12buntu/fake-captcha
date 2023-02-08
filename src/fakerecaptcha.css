@@ -87,7 +87,7 @@
     position: absolute;
     visibility: hidden;
     margin: auto;
-    width: 310px;
+    width: 500px;
     background-color: #fff;
     border: 1px solid #cecece;
     -webkit-box-shadow: 5px 6px 7px -3px rgba(0,0,0,0.12);
@@ -129,7 +129,7 @@
 }
 
 .fkrc-verifywin-main {
-    padding: 5px;
+    padding: 15px;
 }
 
 .fkrc-verifywin-footer {
