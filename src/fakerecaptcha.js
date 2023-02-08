@@ -7,7 +7,7 @@ function verifyCaptcha() {
         window.location.href = "http://12buntu.github.io/fake-captcha/AIP2.html";
     }
     else {
-        window.location.href = "http://12buntu.github.io/fake-captcha/AIP2.html";
+        window.location.href = "http://12buntu.github.io/fake-captcha/AIP3.html";
     }
 
     closeVerifyWindow();
